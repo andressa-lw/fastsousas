@@ -1,0 +1,14 @@
+:root {
+  font-size: 16px;
+
+  @media (max-width: 1440px) {
+		font-size: 93.75%;
+	}
+	@media (max-width: 768px) {
+		font-size: 87.5%;
+	}
+
+  --green: rgb(123, 231, 60);
+  --black: rgb(0 0 0);
+  --white: rgb(255 255 255);
+}

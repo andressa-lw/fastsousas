@@ -26,22 +26,13 @@ footer, header, hgroup, menu, nav, section {
 	box-sizing: border-box;
 }
 
-:root {
-	font-size: 16px;
-	@media (max-width: 1440px) {
-		font-size: 93.75%;
-	}
-	@media (max-width: 768px) {
-		font-size: 87.5%;
-	}
-}
-
 body {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 1rem;
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
+	font-family: 'Poppins', sans-serif;
 }
 
 ol, ul {
@@ -74,5 +65,5 @@ strong {
 
 input, textarea, button, select {
 	font-size: 1rem;
-	-webkit-appearance: none;
+	font-family: 'Poppins', sans-serif;
 }
