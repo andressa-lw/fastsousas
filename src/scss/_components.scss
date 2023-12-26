@@ -1,0 +1,26 @@
+.btn {
+  background: transparent linear-gradient(180deg, #7be73c 0%, #3ca101 100%) 0%
+    0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 5rem;
+  color: var(--white);
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 0.625rem 1.5rem;
+  font-weight: 700;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.25rem;
+  color: var(--black);
+  font-weight: bold;
+  margin-bottom: 2rem;
+
+  strong {
+    color: var(--white);
+  }
+}
