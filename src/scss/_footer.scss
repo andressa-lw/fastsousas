@@ -1,0 +1,9 @@
+.icon-whats {
+  bottom: 1rem;
+  right: 1rem;
+  position: fixed;
+  z-index: 2;
+  img {
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10));
+  }
+}

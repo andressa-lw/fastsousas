@@ -110,7 +110,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   font-family: "Poppins", sans-serif;
-  background: var(--black);
+  background: url('../../assets/img/bg.jpg') no-repeat top center var(--black);
 }
 
 ol,
@@ -142,7 +142,7 @@ img {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 input,

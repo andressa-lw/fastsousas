@@ -10,6 +10,12 @@
       color: var(--green);
     }
   }
+
+  @media (max-width: 860px) {
+    p {
+      font-size: .875rem;
+    }
+  }
 }
 
 header {
@@ -29,6 +35,14 @@ header {
     .social {
       position: absolute;
       right: 32px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .social {
+      img {
+        width: 2.5rem;
+      }
     }
   }
 }

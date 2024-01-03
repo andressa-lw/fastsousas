@@ -1,19 +1,30 @@
 var swiper = new Swiper(".slideGallery", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    980: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
 })
 
-var el = document.querySelectorAll("#cliquepr .cliqueshow")
-for (let i = 0; i < el.length; i++) {
-  el[i].onclick = function () {
-    var c = 0
-    while (c < el.length) {
-      el[c++].className = "cliqueshow"
-    }
-    el[i].className = "cliqueshow active"
-  }
+/* FAQ */
+const accordion = document.querySelectorAll('#cliquepr .cliqueshow');
+for (var i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var last = this.closest('ul').querySelector('.active');
+    if (last && last !== this) last.classList.remove("active");
+    this.classList.toggle("active");
+  });
 }
