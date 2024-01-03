@@ -125,12 +125,14 @@
   .boxServices {
     display: grid;
     align-items: center;
-    justify-content: space-between;
-    grid-template-columns: 16rem 1fr 16rem;
+    justify-content: center;
+    grid-template-columns: 16rem auto 16rem;
     column-gap: 6.25rem;
 
     img {
+      max-width: 24rem;
       width: 100%;
+      margin: 0 auto;
     }
 
     ul {
@@ -181,12 +183,6 @@
             text-align: center;
           }
         }
-      }
-
-      img {
-        max-width: 24rem;
-        width: 100%;
-        margin: 0 auto;
       }
     }
   }
@@ -260,8 +256,8 @@
 
   .container {
     display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 8rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
     align-items: center;
 
     .title {
@@ -404,6 +400,11 @@
       width: fit-content;
       display: block;
       cursor: pointer;
+      transition: all .3s;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
     }
   }
 }
